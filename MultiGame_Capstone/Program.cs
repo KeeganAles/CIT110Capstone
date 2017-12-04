@@ -15,6 +15,9 @@ namespace MultiGame_Capstone
             DisplayClosingScreen();
         }
 
+        /// <summary>
+        /// Call the Number Guessing game
+        /// </summary>
         static void NumberGuessing()
         {
             DisplayHeader("Welcome to the Number Guessing game!");
@@ -65,6 +68,50 @@ namespace MultiGame_Capstone
                 }
             }
             
+        }
+
+        /// <summary>
+        /// Call the LEET Speak game
+        /// </summary>
+        static void DisplayLeetSpeak()
+        {
+            Dictionary<string, string> Leet = new Dictionary<string, string>();
+
+            Leet.Add("a", "4");
+            Leet.Add("b", "13");
+            Leet.Add("c", "(");
+            Leet.Add("d", "[)");
+            Leet.Add("e", "3");
+            Leet.Add("g", "6");
+            Leet.Add("l", "1");
+            Leet.Add("o", "0");
+            Leet.Add("s", "5");
+            Leet.Add("t", "7");
+            Leet.Add("w", "VV");
+
+            DisplayHeader("1337 (0nv3r73r");
+            Console.WriteLine("==============");
+
+            string textIn = "";
+
+            while (textIn.ToLower() != "q")
+            {
+                string textOut = "";
+                Console.WriteLine("HELLO! (press 'q' to quit)");
+                Console.WriteLine();
+                textIn = Console.ReadLine();
+
+                char x;
+                
+                foreach (char character in textIn)
+                {
+                    x = character;
+                    if (textIn = Leet.ContainsKey)
+                    Console.WriteLine(textOut += Leet.Values);
+		            else;
+			            Console.WriteLine(textOut += character);
+                }
+            }
         }
 
         static void DisplayMenu()
