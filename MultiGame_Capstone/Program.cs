@@ -96,21 +96,22 @@ namespace MultiGame_Capstone
 
             while (textIn.ToLower() != "q")
             {
-                string textOut = "";
+                //string textOut = "";
                 Console.WriteLine("HELLO! (press 'q' to quit)");
                 Console.WriteLine();
                 textIn = Console.ReadLine();
 
-                char x;
                 
+
                 foreach (char character in textIn)
                 {
-                    x = character;
-                    if (textIn = Leet.ContainsKey)
-                    Console.WriteLine(textOut += Leet.Values);
-		            else;
-			            Console.WriteLine(textOut += character);
+                    if (character == Leet.Keys())
+                    {
+
+                    }
                 }
+                
+            
             }
         }
 
@@ -140,7 +141,7 @@ namespace MultiGame_Capstone
 
                     case "B":
                     case "b":
-                        
+                        //DisplayLeetSpeak();
                         break;
 
                     case "C":
