@@ -8,6 +8,16 @@ namespace MultiGame_Capstone
 {
     class Program
     {
+
+        /////////////////////////////////
+        // Programmer: Keegan Ales     //
+        // Project: CIT 110 Capstone   //
+        // Class: CIT 110              //
+        // Date Created: 12/4/2017     //
+        // Last Updated: 12/10/2017    //
+        /////////////////////////////////
+        
+
         static void Main(string[] args)
         {
             DisplayOpeningScreen();
@@ -125,6 +135,9 @@ namespace MultiGame_Capstone
             
         }
 
+        /// <summary>
+        /// Call the Menu
+        /// </summary>
         static void DisplayMenu()
         {
             string menuChoice;
