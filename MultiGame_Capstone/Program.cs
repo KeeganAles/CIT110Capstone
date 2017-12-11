@@ -75,44 +75,54 @@ namespace MultiGame_Capstone
         /// </summary>
         static void DisplayLeetSpeak()
         {
-            Dictionary<string, string> Leet = new Dictionary<string, string>();
-
-            Leet.Add("a", "4");
-            Leet.Add("b", "13");
-            Leet.Add("c", "(");
-            Leet.Add("d", "[)");
-            Leet.Add("e", "3");
-            Leet.Add("g", "6");
-            Leet.Add("l", "1");
-            Leet.Add("o", "0");
-            Leet.Add("s", "5");
-            Leet.Add("t", "7");
-            Leet.Add("w", "VV");
-
             DisplayHeader("1337 (0nv3r73r");
             Console.WriteLine("==============");
 
-            string textIn = "";
+            Dictionary<char, string> LeetLookup = new Dictionary<char, string>();
+            LeetLookup.Add('a', "()");
+            LeetLookup.Add('b', "13");
+            LeetLookup.Add('c', "(");
+            LeetLookup.Add('d', "[)");
+            LeetLookup.Add('e', "3");
+            LeetLookup.Add('f', "f");
+            LeetLookup.Add('g', "6");
+            LeetLookup.Add('h', "h");
+            LeetLookup.Add('i', "i");
+            LeetLookup.Add('j', "j");
+            LeetLookup.Add('k', "k");
+            LeetLookup.Add('l', "1");
+            LeetLookup.Add('m', "m");
+            LeetLookup.Add('n', "n");
+            LeetLookup.Add('o', "0");
+            LeetLookup.Add('p', "p");
+            LeetLookup.Add('q', "q");
+            LeetLookup.Add('r', "r");
+            LeetLookup.Add('s', "5");
+            LeetLookup.Add('t', "7");
+            LeetLookup.Add('u', "u");
+            LeetLookup.Add('v', "v");
+            LeetLookup.Add('w', "vv");
+            LeetLookup.Add('x', "x");
+            LeetLookup.Add('y', "y");
+            LeetLookup.Add('z', "z");
 
-            while (textIn.ToLower() != "q")
+            string userResponse;
+
+            do
             {
-                //string textOut = "";
-                Console.WriteLine("HELLO! (press 'q' to quit)");
-                Console.WriteLine();
-                textIn = Console.ReadLine();
+                Console.WriteLine("What would you like to convert?");
+                userResponse = Console.ReadLine().ToLower();
+                char[] textArray = userResponse.ToCharArray();
 
-                
-
-                foreach (char character in textIn)
+                foreach (char character in textArray)
                 {
-                    if (character == Leet.Keys())
-                    {
-
-                    }
+                    Console.Write(LeetLookup[character]);
                 }
-                
+                Console.WriteLine();
+            } while (userResponse != "q");
+
+            DisplayContinuePrompt();
             
-            }
         }
 
         static void DisplayMenu()
@@ -125,8 +135,8 @@ namespace MultiGame_Capstone
                 DisplayHeader("Main Menu");
 
                 Console.WriteLine("\tA) Play the Number Guessing game");
-                Console.WriteLine("\tB) ");
-                Console.WriteLine("\tC) ");
+                Console.WriteLine("\tB) Leet Speak Converter");
+                Console.WriteLine();
                 Console.WriteLine("\tE) Exit");
 
                 Console.Write("Enter Choice:");
@@ -141,9 +151,9 @@ namespace MultiGame_Capstone
 
                     case "B":
                     case "b":
-                        //DisplayLeetSpeak();
+                        DisplayLeetSpeak();
                         break;
-
+                        
                     case "C":
                     case "c":
                         
