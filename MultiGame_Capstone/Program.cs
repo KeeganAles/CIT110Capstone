@@ -115,6 +115,7 @@ namespace MultiGame_Capstone
             LeetLookup.Add('x', "x");
             LeetLookup.Add('y', "y");
             LeetLookup.Add('z', "z");
+            LeetLookup.Add(' ', " ");
 
             string userResponse;
 
